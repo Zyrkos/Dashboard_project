@@ -33,6 +33,7 @@ div {
     display: grid;
     grid-row: 1 / 4;
     grid-template-rows: 100px 1fr;
+    color: white;
     
 }
 
@@ -40,14 +41,25 @@ div {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
-li {
-    padding: 10px;
-    text-align: start;
-
+ul > li {
+    padding: 10px 0;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    grid-auto-flow: column;
+    color: white;
 }
+
+img {
+    width: 24px;
+    color: white;
+}
+
 
 .dashboard {
     font-weight: bold;
